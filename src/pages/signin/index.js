@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
-
-import Logo from '../../assets/fribel.svg';
+import Logo from '../../assets/happypet.png';
 import api from '../../services/api';
 import { login } from '../../services/auth';
-
 import { Form, Container } from './styles';
 
 class SignIn extends Component {
@@ -27,7 +25,7 @@ class SignIn extends Component {
       } catch (err) {
         this.setState({
           error:
-            "Houve um problema com o login, verifique suas credenciais. T.T"
+            "O endereço de e-mail ou senha não é válido."
         });
       }
     }
@@ -38,7 +36,7 @@ class SignIn extends Component {
       <Container>
         <Form onSubmit={this.handleSignIn}>
           <html></html>
-          <img src={Logo} alt="Fribel logo" />
+          <img src={Logo} alt="Happy logo" />
           {this.state.error && <p>{this.state.error}</p>}
           <input
             type="email"

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 
-import Logo from '../../assets/fribel.svg';
+import Logo from '../../assets/happypet.png';
 import api from '../../services/api';
 
 import { Form, Container } from './styles';
@@ -22,10 +22,10 @@ class SignUp extends Component {
     } else {
       try {
         await api.post('/users', { username, email, password });
-        this.props.history.push("/");
+        this.props.history.push("/signin");
       } catch (err) {
         console.log(err);
-        this.setState({ error: 'Ocorreu um erro ao registrar sua conta. T.T' });
+        this.setState({ error: "O endereço de e-mail ou senha não é válido." });
       }
     }
   };
@@ -35,7 +35,7 @@ class SignUp extends Component {
     return (
       <Container>
         <Form onSubmit={this.handleSignUp}>
-          <img src={Logo} alt='Fribel logo' />
+          <img src={Logo} alt='Happy logo' />
           {this.state.error && <p>{this.state.error}</p>}
           <input
             type='text'
@@ -54,7 +54,7 @@ class SignUp extends Component {
           />
           <button type='submit'>Cadastrar</button>
           <hr />
-          <Link to='/'>Fazer login</Link>
+          <Link to='/signin'>Fazer login</Link>
         </Form>
       </Container>
     );

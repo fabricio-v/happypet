@@ -6,7 +6,7 @@ import Logo from '../../assets/happypet.png';
 import { ButtonContainer } from './styles';
 import Button from '../../components/logout';
 
-class Home extends Component {
+class App extends Component {
   handleLogout = e => {
     logout();
     this.props.history.push('/');
@@ -37,4 +37,4 @@ class Home extends Component {
   }
 }
 
-export default withRouter(Home);
+export default withRouter(App);

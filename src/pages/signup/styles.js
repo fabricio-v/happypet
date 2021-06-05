@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import img from '../../assets/background.jpg';
+import img from '../../assets/background.png';
 
 export const Container = styled.div`
   background-image: url(${img});
@@ -15,17 +15,19 @@ export const Form = styled.form`
   background-size: cover;
   display: flex; 
   flex-direction: column; 
+  right: 55px; 
+  position: absolute;
   align-items: center;
   img {
-    width: 300px;
+    width: 500px;
     margin: 10px 0 40px;
   }
   p {
-    color: #ff3333;
+    color: #ffffff;
     margin-bottom: 15px;
-    border: 1px solid #ff3333;
+    border: 3px solid #ff3333;
     padding: 10px;
-    width: 100%;
+    width: 60%;
     text-align: center;
   }
   input {
@@ -35,7 +37,7 @@ export const Form = styled.form`
     padding: 10px;
     color: #777;
     font-size: 15px;
-    width: 100%;
+    width: 300px;
     border: 1px solid #ddd;
     border-radius: 10px;
     &::placeholder {
@@ -49,7 +51,7 @@ export const Form = styled.form`
     height: 40px;
     border: 0;
     border-radius: 10px;
-    width: 50%;
+    width: 160px;
   }
   hr {
     margin: 20px 0;

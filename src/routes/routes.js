@@ -1,11 +1,14 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 import React from 'react';
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 
 import { isAuthenticated } from '../services/auth';
+import Home from '../pages/home';
 import SignUp from '../pages/signup';
 import SignIn from '../pages/signin';
-import App from '../pages/home';
+import App from '../pages/app';
 
+// eslint-disable-next-line no-unused-vars
 const PrivateRoute = ({ component: Component, ...rest }) => (
   <Route
     {...rest}
@@ -22,7 +25,9 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
 const Routes = () => (
   <BrowserRouter>
     <Switch>
-      <Route exact path='/' component={SignIn} />
+      <Route exact path='/' component={Home} />
+      /*
+      <Route path='/signin' component={SignIn} />
       /*
       <Route path='/signup' component={SignUp} />
       */
