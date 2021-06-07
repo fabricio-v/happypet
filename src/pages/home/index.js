@@ -1,40 +1,23 @@
 import React, { Component } from 'react';
+import {Container, Form} from './styles';
 import { withRouter } from 'react-router-dom';
-import { logout } from "../../services/auth";
-import { Form, Container } from './styles';
-import Logo from '../../assets/happypet.png';
-import { ButtonContainer } from './styles';
-import Button from '../../components/logout';
 
 class Home extends Component {
-  handleLogout = e => {
-    logout();
-    this.props.history.push('/');
-  };
-  renderActions() {
-    return (
-      <ButtonContainer>
-        <Button color="#222" onClick={this.handleLogout}>
-          <i className="fa fa-times" />
-        </Button>
-      </ButtonContainer>
-    );
-  }
 
   render() {
     return (
-
       <Container>
-         {this.renderActions()}
-        <Form>
+        <Form onSubmit={this.handleHome}>
           <html></html>
-          <img src={Logo} alt="Happy logo" />
-          <hr />
+          <header>
+
+            
+          </header>
         </Form>
       </Container>
-
     );
   }
+
 }
 
 export default withRouter(Home);
