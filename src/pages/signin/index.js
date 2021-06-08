@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom';
+import {withRouter } from 'react-router-dom';
 import Logo from '../../assets/happypet.png';
 import api from '../../services/api';
 import { login } from '../../services/auth';

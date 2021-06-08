@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import img from '../../assets/background.png';
 
-export const Container = styled.div`
+export const Container = styled.header`
   background-image: url(${img});
   background-size: cover;
   background-repeat: no-repeat;
@@ -13,11 +13,11 @@ export const Container = styled.div`
 
 export const Form = styled.form`
   background-size: cover;
-  display: flex;  /*ajusta elementos na pagina*/
+  display: flex;
   flex-direction: column;
   right: 55px; 
-  position: absolute;/*linha os elementos um abaixo do outro*/
-  align-items: center; /*alinha no centro*/
+  position: absolute;
+  align-items: center;
   img {
     width: 600px;
     margin: 10px 0 40px;
