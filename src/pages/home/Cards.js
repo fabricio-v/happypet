@@ -17,7 +17,7 @@ function Cards() {
             />
             <CardItem
               src='images/img-2.jpg'
-              text='Pensando no melhor para seu pet oferecemos os serviços de passeador, prática de esportes guiados como natação e corridas, ioga, acupuntura e fitoterápicos'
+              text='Pensando no melhor para seu pet oferecemos os serviços de passeador, prática de esportes guiados como natação e corridas, ioga, acupuntura e fitoterápicos.'
               label='Bem-estar'
               path='/services'
             />
@@ -31,13 +31,13 @@ function Cards() {
             />
             <CardItem
               src='images/img-4.jpg'
-              text='Aqui seu pet será adestrados com os melhores profissionais, aprendendo truques e técnicas dando ao pet os limites de maneira correta'
+              text='Aqui seu pet será adestrados com os melhores profissionais, aprendendo truques e técnicas dando ao pet os limites de maneira correta.'
               label='Educação'
               path='/services'
             />
             <CardItem
               src='images/img-8.jpg'
-              text='Aqui você encontro os melhores produtos e acessórios desde alimentação, estética e saúde'
+              text='Aqui você encontro os melhores produtos e acessórios desde alimentação, estética e saúde.'
               label='Acessórios'
               path='/products'
             />

@@ -31,27 +31,20 @@ function Footer() {
       <div class='footer-links'>
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
-            <h2>About Us</h2>
+            <h2>Sobre nós</h2>
             <Link to='/signup'>How it works</Link>
             <Link to='/'>Blog</Link>
             <Link to='/'>Termos de serviço</Link>
           </div>
           <div class='footer-link-items'>
             <h2>Contate-nos</h2>
-            <Link to='/'>Contato</Link>
-            <Link to='/'>Endereço</Link>
+            <Link to='/'>Tel: (91) 3441-1100</Link>
+            <Link to='/'>Email: sac@happypet.com.br </Link>
           </div>
         </div>
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
-            <h2>Videos</h2>
-            <Link to='/'>Submit Video</Link>
-            <Link to='/'>Ambassadors</Link>
-            <Link to='/'>Agency</Link>
-            <Link to='/'>Influencer</Link>
-          </div>
-          <div class='footer-link-items'>
-            <h2>Redes</h2>
+            <h2>Redes Sociais</h2>
             <Link to={{ pathname: 'https://www.instagram.com/'}}>Instagram</Link>
             <Link to={{ pathname: 'https://pt-br.facebook.com/'}}>Facebook</Link>
             <Link to={{ pathname: 'https://youtube.com/'}}>Youtube</Link>
