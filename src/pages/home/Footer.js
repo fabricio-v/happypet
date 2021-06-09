@@ -50,6 +50,7 @@ function Footer() {
             <Link to={{ pathname: 'https://youtube.com/'}}>Youtube</Link>
             <Link to={{ pathname: 'https://twitter.com/'}}>Twitter</Link>
           </div>
+          
         </div>
       </div>
       <section class='social-media'>
