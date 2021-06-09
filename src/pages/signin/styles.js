@@ -19,7 +19,7 @@ export const Form = styled.form`
   position: absolute;
   align-items: center;
   img {
-    width: 600px;
+    width: 500px;
     margin: 10px 0 40px;
   }
   p {

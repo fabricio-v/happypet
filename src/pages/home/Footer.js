@@ -3,6 +3,7 @@ import './Footer.css';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import Logo from '../../assets/happypet.png';
+import Patinha from '../../assets/patinha.png';
 
 
 function Footer() {
@@ -51,10 +52,10 @@ function Footer() {
           </div>
           <div class='footer-link-items'>
             <h2>Redes</h2>
-            <Link to='https://www.instagram.com/'>Instagram</Link>
-            <Link to='https://pt-br.facebook.com/'>Facebook</Link>
-            <Link to='https://youtube.com/'>Youtube</Link>
-            <Link to='https://twitter.com/'>Twitter</Link>
+            <Link to={{ pathname: 'https://www.instagram.com/'}}>Instagram</Link>
+            <Link to={{ pathname: 'https://pt-br.facebook.com/'}}>Facebook</Link>
+            <Link to={{ pathname: 'https://youtube.com/'}}>Youtube</Link>
+            <Link to={{ pathname: 'https://twitter.com/'}}>Twitter</Link>
           </div>
         </div>
       </div>
@@ -63,13 +64,14 @@ function Footer() {
           <div class='footer-logo'>
             <Link to='/' className='social-logo'>
             <img src={Logo} alt='Happy logo' className='imgFoo' />
+            <img src={Patinha} alt='Patinha logo' className='imgPatFoo' />
             </Link>
           </div>
           <small class='website-rights'>HappyPet © 2021</small>
           <div class='social-icons'>
             <Link
               class='social-icon-link facebook'
-              to='https://pt-br.facebook.com/'
+              to={{ pathname: 'https://pt-br.facebook.com/'}}
               target='_blank'
               aria-label='Facebook'
             >
@@ -77,7 +79,7 @@ function Footer() {
             </Link>
             <Link
               class='social-icon-link instagram'
-              to='https://www.instagram.com/'
+              to={{ pathname: 'https://www.instagram.com/'}}
               target='_blank'
               aria-label='Instagram'
             >
@@ -85,7 +87,7 @@ function Footer() {
             </Link>
             <Link
               class='social-icon-link youtube'
-              to='https://youtube.com/'
+              to={{ pathname: 'https://youtube.com/'}}
               target='_blank'
               aria-label='Youtube'
             >
@@ -93,7 +95,7 @@ function Footer() {
             </Link>
             <Link
               class='social-icon-link twitter'
-              to='https://twitter.com/'
+              to={{ pathname: 'https://twitter.com/'}}
               target='_blank'
               aria-label='Twitter'
             >
@@ -101,7 +103,7 @@ function Footer() {
             </Link>
             <Link
               class='social-icon-link linkedin'
-              to = 'https://br.linkedin.com/'
+              to = {{ pathname: 'https://br.linkedin.com/'}}
               target='_blank'
               aria-label='LinkedIn'
             >
