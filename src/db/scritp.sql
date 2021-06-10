@@ -1,0 +1,181 @@
+-- MySQL dump 10.13  Distrib 5.5.62, for Win64 (AMD64)
+--
+-- Host: mysqllc.c2a2is9xawh5.us-east-2.rds.amazonaws.com    Database: happypet
+-- ------------------------------------------------------
+-- Server version	5.6.44-log
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `pet`
+--
+
+DROP TABLE IF EXISTS `pet`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `pet` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `address` varchar(255) NOT NULL,
+  `age` int(11) NOT NULL,
+  `city` varchar(255) NOT NULL,
+  `cor` varchar(255) NOT NULL,
+  `district` varchar(255) NOT NULL,
+  `fone` varchar(255) NOT NULL,
+  `last_visit` varchar(255) DEFAULT NULL,
+  `name` varchar(255) NOT NULL,
+  `obs` varchar(255) NOT NULL,
+  `owner` varchar(255) NOT NULL,
+  `species` varchar(255) NOT NULL,
+  `type_pet` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=130 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `pet`
+--
+
+LOCK TABLES `pet` WRITE;
+/*!40000 ALTER TABLE `pet` DISABLE KEYS */;
+INSERT INTO `pet` VALUES (67,'ORLA DA PRAIA DE MARUDA',5,'MARAPANIM','BRANCO','ALEGRE','91981388762','2021-03-14','Blue','','ELIANA','Bichon frisé','CAO'),(68,'MIRIZAL',3,'MARITUBA','MARRON','CECON','91932568028','2021-03-04','Céu','','JOAO','Buldogue francês','CAO'),(69,'VILA PERSEVERENCA',1,'SAO DOMINGOS DO','BEGE','VILA PERSEVERANCA','91993486100','2021-03-08','Joy','','JOSE','Buldogue inglês','CAO'),(70,'RUA K',1,'CASTANHAL','AMARELO','FONTE BOA','91992955355','2021-02-23','Petit','','MARIA','Bull terrier','CAO'),(71,'RUA RAIMUNDO SAMPAIO ',1,'TOMÉ-AÇÚ','CARAMELO','PORTELINHA','920009866','2020-10-18','Toy','','MIRIAN','Cane corso','CAO'),(72,'RUA GAMA (CJ ZOÉ MOTA GUEIROS)',2,'BELEM','CINZA','TAPANÃ (ICOARACI)','9132486038','2021-03-04','Biscuit','','FRANCISCO','Cavalier king charles spaniel','CAO'),(73,'RUA RUI BARBOSA ',1,'BAIAO','CASTANHO','CIDADE NOVA','988516417','2021-02-18','Boo','','ADALTO','Chihuahua','CAO'),(74,'AVENIDA CASTELO BRANCO',5,'SANTA LUZIA DO ','PRETO','CENTRO','9139451295','2021-03-14','Honey','','ANTONIO','Dálmata','CAO'),(75,'CONJ RORAIMA AMAPA RUA MUCUCURAL QR 35',3,'ANANINDEUA','BRANCO','CURUCAMBA','9132735070','2021-02-22','Mini','','JORGE','Doberman','CAO'),(76,'RODOVIA AUGUSTO MONTENEGRO',4,'BELEM','MARRON','TENONE','9188351111','2021-03-08','Poppy','','ARISON','Dogue alemão','CAO'),(77,'RUA PRINCIPAL',5,'SALVATERRA','BEGE','VILA DE JOANES','91993609411','2021-03-07','Tutti','','ANTONIO','Fila brasileiro','CAO'),(78,'PASSAGEM BANDEIRANTE - ATÉ 220/221',4,'BELEM','AMARELO','SACRAMENTA','9188750644','2021-03-01','Aruk','','ANTONIO','Golden retriever','CAO'),(79,'AVENIDA BARAO DE GUAJARA',4,'VIGIA','CARAMELO','CASTANHEIRA','91984705994','2021-02-05','Coco','','ALCIOMAR','Husky siberiano','CAO'),(80,'RUA CLÁUDIO BORDALO',5,'BELEM','CINZA','SACRAMENTA','9196150731','2021-03-11','Lui','','ALEX','Boston terrier','CAO'),(81,'PASSAGEM SEXTA LINHA',2,'BELEM','CASTANHO','TENONE','9188924277','2021-03-11','Mika','','JORGE','Boxer','CAO'),(82,'PASSAGEM SANTO AMARO',4,'BELEM','CINZA','MARACANGALHA','9132571647','2021-02-04','Pepper','','MANOEL','Buldogue francês','CAO'),(83,'RUA PROVIDENCIA',5,'ANANINDEUA','CASTANHO','COQUEIRO','91982837732','2021-03-12','Zig','','MARLENE','Buldogue inglês','CAO'),(84,'RUA VARIANTE',5,'BELEM','PRETO','CHAPÉU VIRADO (MOSQUEIRO)','982714504','2021-03-11','Benji','','ALDO','Bull terrier','CAO'),(85,'CONJUNTO VALE VERDE ALAMEDA PORTUGUAL',1,'ANANINDEUA','BRANCO','COQUEIRO','91998316027','2021-02-01','Hashi','','ALBINO','Cane corso','CAO'),(86,'AVENIDA 10 DE AGOSTO',5,'BENEVIDES','CARAMELO','BENFICA','91987114221','2021-03-09','Maui','','ADRIA','Cavalier king charles spaniel','CAO'),(87,'RUA DIONISIO BENTES',3,'BENEVIDES','CINZA','BENFICA','9134568239','2021-03-12','Milo','','ANA','Chihuahua','CAO'),(88,'RUA MARTINHO MONTEIRO',3,'BENEVIDES','CASTANHO','BENFICA','83133948','2021-03-12','Yuki','','MARIA','Dálmata','CAO'),(89,'RUA VARIANTE',5,'BELEM','CINZA','CHAPEU VIRADO (MOSQUEIRO)','981186481','2021-02-18','Zulu','','ODENILSON','Doberman','CAO'),(90,'RUA HENRIQUE DIAS ',5,'BELEM','CASTANHO','CABANAGEM','987171838','2021-03-10','Mel','','ROSA','Dogo argentino','CAO'),(91,'PASSAGEM MUCAJA',2,'BELEM','BEGE','SACRAMENTA','91981372082','2020-12-28','Nina','','ANA',' British Shorthair','GATO'),(92,'TRAVESSA WE SESSENTA E DOIS -A',4,'ANANINDEUA','AMARELO','COQUEIRO','9132737745','2021-03-09','Maggie','','LUIZ',' Gato Siamês','GATO'),(93,'PASSAGEM UNIAO',2,'BELEM','CARAMELO','MARCO','91991784821','2021-03-08','Luna','','MARIVALDO',' Maine Coon','GATO'),(94,'PASSAGEM UNIÃO',1,'BELEM','CINZA','MARCO','9183037915','2021-03-12','Amora','','KATIA',' Gato Persa','GATO'),(95,'RUA MÁRIO ANDREAZZA',3,'BELEM','CASTANHO','PARQUE GUAJARÁ (ICOARACI)','9181950102','2021-03-10','Lola','','RAIMUNDO',' Himalaia','GATO'),(96,'VL BERECA ',2,'BAIAO','PRETO','MULTIRAO','987585188','2021-03-11','Belinha','','ORLANDO',' Burmese','GATO'),(97,'RODOVIA ARTUR BERNARDES',3,'BELEM','BRANCO','TAPANA (ICOARACI)','9192011084','2021-03-11','Mia','','ALEX',' Angorá','GATO'),(98,'TRAVESSA MARIZ E BARROS',2,'BELEM','CINZA','MARCO','91988992476','2021-03-01','Maya','','JOSE',' Sphynx','GATO'),(99,'RUA ABELARDO CONDURU',4,'ANANINDEUA','CASTANHO','COQUEIRO','91982105672','2021-03-04','Lilica','','MANOEL',' Ragdoll','GATO'),(100,'PASSAGEM LAURO MARTINS',5,'BELEM','PRETO','MARCO','9130817069','2021-03-12','Hannah','','ANEZILDA',' British Shorthair','GATO'),(101,'PASSAGEM JÁDER BARBALHO',5,'ANANINDEUA','BRANCO','COQUEIRO','981965289','2021-03-02','Valentina','','SAMUEL',' Gato Siamês','GATO'),(102,'TRAVESSA WE 79 CIDADE NOVA 7',4,'ANANINDEUA','MARRON','COQUEIRO','91980778608','2020-12-24','Lucy','','THARLES',' Maine Coon','GATO'),(103,'RUA AMADO MAIA ',4,'MOCAJUBA','BEGE','CIDADE NOVA','983606728','2021-03-14','Bebel','','ELIAS',' Gato Persa','GATO'),(104,'RUA JADER BARBALHO',1,'ANANINDEUA','AMARELO','LEVILANDIA','91984056994','2021-03-09','Pandora','','BENICIO',' Himalaia','GATO'),(105,'RUA BOLÍVIA (CJ JD AMÉRICA)',2,'ANANINDEUA','CARAMELO','COQUEIRO','9191414940','2021-03-12','Marie','','ROSIVALDO',' Burmese','GATO'),(106,'RUA TIMBIRAS - DE 1836/1837 AO FIM',5,'BELEM','CINZA','CREMAÇÃO','9132221337','2021-03-04','Pérola','','MANOEL',' Angorá','GATO'),(107,'RUA DOS CARIPUNAS',4,'BELEM','CASTANHO','CREMACAO','930878763','2021-02-18','Shakira','','JORGE',' Sphynx','GATO'),(108,'RODOVIA TRANSCOQUEIRO - LADO PAR',2,'ANANINDEUA','CINZA','COQUEIRO','982877035','2021-01-13','Lady','','PEDRO',' Ragdoll','GATO'),(109,'VILA SANTO ANTONIO',2,'CAPANEMA','CASTANHO','CAPANEMA','91982058467','2021-03-11','Juju','','FRANCISCO',' Sphynx','GATO'),(110,'TRAVESSA BONITO',4,'CASTANHAL','PRETO','SANTA HELENA','91989198287','2021-03-01','Kate','','GILBERTO',' Ragdoll','GATO'),(111,'RAMAL DO SANTANA KM 29',1,'BUJARU','BRANCO','VILA SANTANA','91992406776','2021-03-07','Laika','','SIDNEI',' British Shorthair','GATO'),(112,'AVENIDA BEIRA MAR',5,'BUJARU','CARAMELO','CENTRO','91988473695','2021-01-14','Bolinha','','AILSON',' Gato Siamês','GATO'),(113,'VILA JARBAS PASSARINHO',3,'BELEM','CINZA','UNA','999168323','2021-03-10','Thor','','JOAO',' Maine Coon','GATO'),(114,'RUA IPE VILA MACARRAO',4,'TAILANDIA','CASTANHO','VILA MACARRAO','9191776895','2021-03-07','Luke','','JOAO',' Gato Persa','GATO'),(115,'C NOVA 8 PASS AGUAS VERDES',1,'ANANINDEUA','CINZA','COQUEIRO','984930083','2021-03-11','Nick','','EULETE',' Himalaia','GATO'),(116,'RUA PRIMEIRO DE JANEIRO',5,'TOME ACU','CASTANHO','CONEGO','91991825232','2021-02-18','Theo','','ELIANA',' Burmese','GATO'),(117,'AVENIDA PRIMEIRO DE JANEIRO',3,'TOME ACU','BEGE','CANEBO','91991013413','2021-02-25','Zeus','','JOSE',' Angorá','GATO'),(118,'PASSAGEM SAO LOURENCO',5,'BELEM','AMARELO','CURIO UTINGA','9132764323','2021-03-10','Apolo','','MARIA',' Sphynx','GATO'),(119,'AVENIDA CABANOS - DE 2666/2667 A 3574/35',5,'BELEM','CARAMELO','CONDOR','991595380','2021-03-03','Boris','','DARLEY',' Ragdoll','GATO'),(120,'RUA OSCAR DE SOUZA ',1,'ANANINDEUA','BRANCO','DISTRITO ','996349529','2021-01-26','Tobby','','FLAVIO',' Sphynx','GATO'),(121,'AVENIDA GENTIL BITTENCOURT - DE 2234/223',3,'BELEM','CINZA','SÃO BRÁS','993340371','2021-03-08','Sheik','','FRANCISCO',' Ragdoll','GATO'),(122,'RUA CÔNEGO SIQUEIRA MENDES',1,'QUATIPURU','CINZA','CENTRO','984588085','2021-03-11','Bolota','','ANDRELINA',' British Shorthair','GATO'),(123,'RUA RAIMUNDO VIANA ',1,'SAO JOAO DE PIR','CASTANHO','ATLÂNTICO 2','984693227','2021-03-14','Eros','','EDILSON',' Gato Siamês','GATO'),(124,'TRAVESSA WE 68 A (CJ GUAJARA I)',5,'ANANINDEUA','PRETO','COQUEIRO','9132634489','2021-03-01','Zé','','MARIA',' Maine Coon','GATO'),(125,'PASSAGEM MIRANDINHA',3,'BELEM','BRANCO','BARREIRO','9132338705','2021-03-05','Floquinho','','PAULO',' Gato Persa','GATO'),(126,'AVENIDA DEODORO DE MENDONCA',3,'CAMETA','MARRON','NOVO','91981882778','2020-10-15','Jimmy','','ELAILSON',' Angorá','GATO'),(127,'AVENIDA JOAO PAULO II',4,'BELEM','BEGE','CURIO UTINGA','91989045968','2021-03-10','Charlie','','JOAO',' Sphynx','GATO'),(128,'AVENIDA INDEPENDENCIA',2,'CONCORDIA DO PA','AMARELO','CENTRO','91992424069','2021-03-04','Barth','','ANTONIO',' Ragdoll','GATO'),(129,'VILA PERSEVERANCA',1,'SAO DOMINGOS DO','PRETO','VILA PERSEVERANCA','91991783717','2021-03-08','Baby','','ANTONIO',' British Shorthair','CAO');
+/*!40000 ALTER TABLE `pet` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `professional`
+--
+
+DROP TABLE IF EXISTS `professional`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `professional` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `profession` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `professional`
+--
+
+LOCK TABLES `professional` WRITE;
+/*!40000 ALTER TABLE `professional` DISABLE KEYS */;
+INSERT INTO `professional` VALUES (1,'FABIO','VETERINARIO'),(2,'PEDRO','TOSADOR'),(3,'JHONY','TOSADOR'),(4,'BARBARA','VETERINARIO');
+/*!40000 ALTER TABLE `professional` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `scheduling`
+--
+
+DROP TABLE IF EXISTS `scheduling`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `scheduling` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `date` date NOT NULL,
+  `dt_create` datetime NOT NULL,
+  `hour` time NOT NULL,
+  `id_pet` int(11) NOT NULL,
+  `professional` varchar(255) NOT NULL,
+  `status` varchar(255) NOT NULL,
+  `type_service` int(11) NOT NULL,
+  `user_create` int(11) NOT NULL,
+  `value` float NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `scheduling`
+--
+
+LOCK TABLES `scheduling` WRITE;
+/*!40000 ALTER TABLE `scheduling` DISABLE KEYS */;
+INSERT INTO `scheduling` VALUES (1,'2020-05-05','2020-04-26 00:00:00','00:00:13',67,'FABIO','ABERTO',8,1,20),(2,'2020-05-02','2020-04-30 00:00:00','00:00:13',74,'PEDRO','ABERTO',3,1,30);
+/*!40000 ALTER TABLE `scheduling` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `services`
+--
+
+DROP TABLE IF EXISTS `services`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `services` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `service` varchar(255) NOT NULL,
+  `value` float NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `services`
+--
+
+LOCK TABLES `services` WRITE;
+/*!40000 ALTER TABLE `services` DISABLE KEYS */;
+INSERT INTO `services` VALUES (1,'BANHO',30),(2,'HIDRATACAO',50),(3,'TOSA NA MAQUINA',30),(4,'TOSA NA TESOURA',50),(5,'DESEMBARACEMENTO',25),(6,'TINGIMENTO DOS PELOS',50),(7,'ESCOVACAO DE DENTES',20),(8,'LIMPEZA DE OUVIDOS',20),(9,'CORTE DE UNHAS',15);
+/*!40000 ALTER TABLE `services` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `users`
+--
+
+DROP TABLE IF EXISTS `users`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `address` varchar(255) NOT NULL,
+  `admission_date` varchar(255) NOT NULL,
+  `city` varchar(255) NOT NULL,
+  `district` varchar(255) NOT NULL,
+  `fone` varchar(255) NOT NULL,
+  `function` varchar(255) NOT NULL,
+  `login` varchar(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `resignation_date` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `users`
+--
+
+LOCK TABLES `users` WRITE;
+/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` VALUES (1,'admin','2020-01-01','belem','centro','91 3341-8526','administrador','admin','admin','admin','2020-01-01');
+/*!40000 ALTER TABLE `users` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping routines for database 'happypet'
+--
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2021-05-28 10:26:25
