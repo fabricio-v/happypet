@@ -1,7 +1,11 @@
 import React from 'react';
+import Navbar from '../../components/Navbar';
 
 
 function Services() {
-  return <h1 className='services'>SERVICES</h1>;
+  return <>
+  <Navbar />
+  <h1 className='services'>SERVICES</h1>;
+  </>
 }
 export default Services;

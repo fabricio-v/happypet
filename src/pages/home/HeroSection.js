@@ -10,21 +10,7 @@ function HeroSection() {
       <h1>O melhor para seu Pet e aqui!</h1>
       <p>O que você está esperando, venha conhecer nossa loja.</p>
       <div className='hero-btns'>
-        <Button
-          className='btns'
-          buttonStyle='btn--outline'
-          buttonSize='btn--large'
-        >
-          GET STARTED
-        </Button>
-        <Button
-          className='btns'
-          buttonStyle='btn--primary'
-          buttonSize='btn--large'
-          onClick={console.log('hey')}
-        >
-          WATCH TRAILER <i className='far fa-play-circle' />
-        </Button>
+
       </div>
     </div>
   );

@@ -1,9 +1,6 @@
 import styled from "styled-components";
-import img from '../../assets/background.png';
 
 export const Container = styled.div`
-  background-image: url(${img});
-  opacity: .4;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;

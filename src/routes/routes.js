@@ -25,15 +25,13 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
 
 const Routes = () => (
   <BrowserRouter>
-   <Navbar />
     <Switch>
-
       <Route exact path='/' component={Home} />
       <Route path='/signin' component={SignIn} />
       <Route path='/signup' component={SignUp} />
       <Route path='/services' component={Services} />
       <Route path='/products' component={Products} />
-      <Route path='/app' component={App} />
+      <PrivateRoute path='/app' component={App} />
       <Route path='*' component={() => <h1>Page not found</h1>} />
     </Switch>
   </BrowserRouter>

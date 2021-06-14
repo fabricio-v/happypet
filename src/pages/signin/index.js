@@ -4,6 +4,7 @@ import Logo from '../../assets/happypet.png';
 import api from '../../services/api';
 import { login } from '../../services/auth';
 import { Form, Container } from './styles';
+import Navbar from '../../components/Navbar';
 
 class SignIn extends Component {
   state = {
@@ -32,8 +33,10 @@ class SignIn extends Component {
   };
 
   render() {
-    return (
+    return <>
+       <Navbar />
       <Container>
+
         <Form onSubmit={this.handleSignIn}>
           <html></html>
           <img src={Logo} alt="Happy logo" />
@@ -52,7 +55,7 @@ class SignIn extends Component {
           <hr />
         </Form>
       </Container>
-    );
+     </>;
   }
 }
 

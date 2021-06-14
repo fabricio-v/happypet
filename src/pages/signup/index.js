@@ -4,6 +4,7 @@ import Logo from '../../assets/happypet.png';
 import api from '../../services/api';
 
 import { Form, Container } from './styles';
+import Navbar from '../../components/Navbar';
 
 class SignUp extends Component {
   state = {
@@ -31,7 +32,8 @@ class SignUp extends Component {
 
 
   render() {
-    return (
+    return <>
+    <Navbar />
       <Container>
         <Form onSubmit={this.handleSignUp}>
           <img src={Logo} alt='Happy logo' />
@@ -56,7 +58,7 @@ class SignUp extends Component {
           <Link to='/signin'>Fazer login</Link>
         </Form>
       </Container>
-    );
+    </>;
   }
 }
 export default withRouter(SignUp);

@@ -32,7 +32,7 @@ function Footer() {
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
             <h2>Sobre nós</h2>
-            <Link to='/signup'>How it works</Link>
+            <Link to='/signup'>Como funciona</Link>
             <Link to='/'>Blog</Link>
             <Link to='/'>Termos de serviço</Link>
           </div>
@@ -45,10 +45,10 @@ function Footer() {
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
             <h2>Redes Sociais</h2>
-            <Link to={{ pathname: 'https://www.instagram.com/'}}>Instagram</Link>
-            <Link to={{ pathname: 'https://pt-br.facebook.com/'}}>Facebook</Link>
-            <Link to={{ pathname: 'https://youtube.com/'}}>Youtube</Link>
-            <Link to={{ pathname: 'https://twitter.com/'}}>Twitter</Link>
+            <Link to={{ pathname: 'https://www.instagram.com/'}} target='_blank'>Instagram</Link>
+            <Link to={{ pathname: 'https://pt-br.facebook.com/'}} target='_blank'>Facebook</Link>
+            <Link to={{ pathname: 'https://youtube.com/'}} target='_blank'>Youtube</Link>
+            <Link to={{ pathname: 'https://twitter.com/'}} target='_blank'>Twitter</Link>
           </div>
           
         </div>
