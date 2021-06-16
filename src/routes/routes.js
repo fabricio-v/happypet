@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import { isAuthenticated } from '../services/auth';
-import Navbar from '../components/Navbar';
 import Home from '../pages/home';
 import SignUp from '../pages/signup';
 import SignIn from '../pages/signin';
