@@ -1,18 +1,41 @@
-import React, { useState } from 'react';
+import React, { useState, Component } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
+import * as ImIcons from 'react-icons/im';
 import { SidebarData } from './SidebarData';
 import SubMenu from './SubMenu';
 import { IconContext } from 'react-icons/lib';
+import Logo from '../assets/happypet.png';
+import Patinha from '../assets/patinha.png';
+import { logout } from "../services/auth";
+
 
 const Nav = styled.div`
-  background: #15171c;
+  background: #1d235d;
   height: 80px;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: space-between
+ 
+`;
+
+const Img = styled.img`
+ width: 300px;
+ align-items: center;
+`;
+
+const ImgPat = styled.img`
+ width: 65px;
+ align-items: center;
+`;
+
+const NavExit = styled(Link)`
+margin-left: 2rem;
+font-size: 2rem;
+height: 80px;
+display: flex;
+align-items: center;
 `;
 
 const NavIcon = styled(Link)`
@@ -20,13 +43,13 @@ const NavIcon = styled(Link)`
   font-size: 2rem;
   height: 80px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: start;
   align-items: center;
 `;
 
 const SidebarNav = styled.nav`
-  background: #15171c;
-  width: 250px;
+  background: #1d235c;
+  width: 280px;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -41,10 +64,21 @@ const SidebarWrap = styled.div`
   width: 100%;
 `;
 
+
+
+
+
+
+
 const Sidebar = () => {
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
+
+  const handleLogout = e => {
+    logout();
+    this.props.history.push('/');
+  }; 
 
   return (
     <>
@@ -53,6 +87,13 @@ const Sidebar = () => {
           <NavIcon to='#'>
             <FaIcons.FaBars onClick={showSidebar} />
           </NavIcon>
+          <div className= 'logo-nav'>
+            <Img src={Logo} alt= 'Happy logo' className='img' />
+            <ImgPat src={Patinha} alt= 'Patinha logo' className='imgPat' />
+          </div>
+          <NavExit>
+            <ImIcons.ImExit onClick={handleLogout.logout}/>
+          </NavExit>
         </Nav>
         <SidebarNav sidebar={sidebar}>
           <SidebarWrap>

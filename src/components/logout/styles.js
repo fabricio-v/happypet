@@ -7,7 +7,7 @@ export const Button = styled.button`
   height: 60px;
   border-radius: 60px;
   border: none;
-  background-color: ${({ color }) => color};
+  background-color:#1d235d;
   margin-top: 10px;
   color: #fff;
   i {

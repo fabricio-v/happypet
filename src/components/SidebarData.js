@@ -1,14 +1,13 @@
 import React from 'react';
-import * as FaIcons from 'react-icons/fa';
-import * as AiIcons from 'react-icons/ai';
-import * as IoIcons from 'react-icons/io';
 import * as RiIcons from 'react-icons/ri';
+import * as FcIcons from "react-icons/fc";
+
 
 export const SidebarData = [
   {
     title: 'Loja',
     path: '/shop',
-    icon: <AiIcons.AiFillHome />,
+    icon: <FcIcons.FcShop />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
 
@@ -16,19 +15,19 @@ export const SidebarData = [
       {
         title: 'Vendas',
         path: '/shop/sale',
-        icon: <IoIcons.IoIosPaper />
+        icon: <FcIcons.FcMoneyTransfer />
       },
       {
         title: 'Consulta Vendas',
         path: '/shop/consultationSale',
-        icon: <IoIcons.IoIosPaper />
+        icon: <FcIcons.FcBullish />
       }
     ]
   },
   {
     title: 'Agenda',
     path: '/schedule',
-    icon: <IoIcons.IoIosPaper />,
+    icon: <FcIcons.FcAddressBook />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
 
@@ -36,26 +35,26 @@ export const SidebarData = [
       {
         title: 'Criar Agendamento',
         path: '/schedule/scheduling',
-        icon: <IoIcons.IoIosPaper />,
+        icon: <FcIcons.FcPlanner />,
         cName: 'sub-nav'
       },
       {
         title: 'Consulta Agendamento',
         path: '/schedule/consultationSchedule',
-        icon: <IoIcons.IoIosPaper />,
+        icon: <FcIcons.FcFinePrint />,
         cName: 'sub-nav'
       },
       {
-        title: 'Reagendar / Cancelar',
+        title: 'Cancelar Agendamento',
         path: '/schedule/cancelSchedule',
-        icon: <IoIcons.IoIosPaper />
+        icon: <FcIcons.FcLeave />
       }
     ]
   },
   {
     title: 'Cadastro',
     path: '/register',
-    icon: <FaIcons.FaEnvelopeOpenText />,
+    icon: <FcIcons.FcAddDatabase />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
 
@@ -63,28 +62,29 @@ export const SidebarData = [
       {
         title: 'Pet´s',
         path: '/register/pet',
-        icon: <IoIcons.IoIosPaper />
+        icon: <FcIcons.FcLinux />
       },
       {
         title: 'Serviços',
         path: '/register/services',
-        icon: <IoIcons.IoIosPaper />
+        icon: <FcIcons.FcServices />
       },
       {
         title: 'Usuarios',
         path: '/register/users',
-        icon: <IoIcons.IoIosPaper />
+        icon: <FcIcons.FcConferenceCall />
       },
       {
         title: 'Produtos',
         path: '/register/product',
-        icon: <IoIcons.IoIosPaper />
+        icon: <FcIcons.FcShipped />
       },
       {
         title: 'Profissionais',
         path: '/register/professional',
-        icon: <IoIcons.IoIosPaper />
+        icon: <FcIcons.FcManager />
       }
     ]
   }
 ];
+
