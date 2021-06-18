@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-
 import 'font-awesome/css/font-awesome.css';
 
 export const GlobalStyles = createGlobalStyle`
@@ -9,6 +8,7 @@ export const GlobalStyles = createGlobalStyle`
   margin: 0;
   outline: 0;
 }
+
 
 body, html {
   background: #eee;
