@@ -26,14 +26,7 @@ export const Form = styled.form`
   position: absolute;
   align-items: center;
 
-  p {
-    color: #ffffff;
-    margin-bottom: 15px;
-    border: 3px solid #ff3333;
-    padding: 10px;
-    width: 60%;
-    text-align: center;
-  }
+
   input {
     flex: 1;
     height: 46px;
@@ -57,27 +50,6 @@ export const Form = styled.form`
     border-radius: 10px;
     width: 160px;
   }
-  hr {
-    margin: 20px 0;
-    border: none;
-    border-bottom: 2px solid #ffff;
-    width: 100%;
-  }
-  }
-  a {
-    font-size: 16;
-    font-weight: bold;
-    text-align: center;
-    border: 0;
-    align: top;
-    height: 20px;
-    width: 30%;
-    border-radius: 5px;
-    color: #00448F;
-    text-decoration: none;
-  }
-    a:hover{
-    background: #ffff;
-    background-size: 100%;
+
   }
   `;
