@@ -1,25 +1,27 @@
-.name {
+.input {
   flex: 1;
   height: 46px;
   margin-bottom: 10px;
   padding: 10px;
+  margin: 5px;
   color: #777;
   font-size: 15px;
-  width: 700px;
+  /* width: 100%; */
   border: 1px solid #ddd;
   border-radius: 10px;
+  
   &::placeholder {
     color: #999;
   }
 }
-.age {
+/* .age {
   flex: 1;
   height: 46px;
   margin-bottom: 10px;
   padding: 10px;
   color: #777;
   font-size: 15px;
-  width: 700px;
+  width: 100%;
   border: 1px solid #ddd;
   border-radius: 10px;
   &::placeholder {
@@ -34,7 +36,7 @@
   padding: 10px;
   color: #777;
   font-size: 15px;
-  width: 700px;
+  width: 100%;
   border: 1px solid #ddd;
   border-radius: 10px;
   &::placeholder {
@@ -49,13 +51,13 @@
   padding: 10px;
   color: #777;
   font-size: 15px;
-  width: 700px;
+  width: 100%;
   border: 1px solid #ddd;
   border-radius: 10px;
   &::placeholder {
     color: #999;
   }
-}
+} */
 .salva {
   color: #fff;
   font-size: 16px;
@@ -64,4 +66,30 @@
   border: 0;
   border-radius: 10px;
   width: 160px;
+  margin: 5px;
+}
+
+.title {
+  font-size: 16px;
+  margin: 10px;
+}
+
+.donoend {
+  display: flex;
+  flex-direction: column;
+}
+
+.dadospet {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  padding: 10px;
+}
+
+.containerBotoes {
+  display: flex;
+  justify-content: flex-end;
 }
