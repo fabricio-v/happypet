@@ -19,6 +19,24 @@ class RegisterPet extends Component {
     obs: "",
   };
 
+  handleClean = () => {
+    this.setState({
+      name: "",
+      age: "",
+      cor: "",
+      species: "",
+      type_pet: "",
+      owner: "",
+      address: "",
+      city: "",
+      district: "",
+      fone: "",
+      last_visit: "",
+      obs: "",
+    });
+    this.setState({ error: "" });
+  };
+
   handlePet = async (e) => {
     e.preventDefault();
     const {
@@ -78,11 +96,16 @@ class RegisterPet extends Component {
     return (
       <>
         <container>
-          <form style={{padding: 20}} onSubmit={this.handlePet}>
+          <form
+            style={{ padding: 20 }}
+            onSubmit={this.handlePet}
+            onReset={this.handleClean}
+          >
             <div className="dadospet">
               {this.state.error && <p>{this.state.error}</p>}
               <span className="title">Dados pet:</span>
               <input
+                required
                 className="input"
                 type="text"
                 placeholder="Nome de Pet"
@@ -91,12 +114,16 @@ class RegisterPet extends Component {
 
               <div className="row">
                 <input
+                  min={0}
+                  max={100}
+                  required
                   className="input"
                   type="number"
                   placeholder="Idade"
                   onChange={(e) => this.setState({ age: e.target.value })}
                 />
                 <input
+                  required
                   className="input"
                   type="text"
                   placeholder="Cor"
@@ -106,12 +133,14 @@ class RegisterPet extends Component {
 
               <div className="row">
                 <input
+                  required
                   className="input"
                   type="text"
                   placeholder="Raça"
                   onChange={(e) => this.setState({ species: e.target.value })}
                 />
                 <input
+                  required
                   className="input"
                   type="text"
                   placeholder="Tipo"
@@ -173,7 +202,7 @@ class RegisterPet extends Component {
               </div>
             </div>
             <div className="containerBotoes">
-              <button className="salva " type="submit">
+              <button className="salva " type="reset">
                 limpar
               </button>
               <button className="salva" type="submit">
