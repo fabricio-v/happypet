@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import Logo from '../../assets/happypet.png';
-import api from '../../services/api';
+import api from '../../services/useApi';
 
 import { Form, Container } from './styles';
 import Navbar from '../../components/Navbar';

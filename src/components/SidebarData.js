@@ -6,7 +6,7 @@ import * as FcIcons from "react-icons/fc";
 export const SidebarData = [
   {
     title: 'Loja',
-    path: '/shop',
+    path: '/app',
     icon: <FcIcons.FcShop />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
@@ -14,19 +14,19 @@ export const SidebarData = [
     subNav: [
       {
         title: 'Vendas',
-        path: '/shop/sale',
+        path: '/sale',
         icon: <FcIcons.FcMoneyTransfer />
       },
       {
         title: 'Consulta Vendas',
-        path: '/shop/consultationSale',
+        path: '/consultationSale',
         icon: <FcIcons.FcBullish />
       }
     ]
   },
   {
     title: 'Agenda',
-    path: '/schedule',
+    path: '/app',
     icon: <FcIcons.FcAddressBook />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
@@ -34,7 +34,7 @@ export const SidebarData = [
     subNav: [
       {
         title: 'Criar Agendamento',
-        path: '/schedule/scheduling',
+        path: '/scheduling',
         icon: <FcIcons.FcPlanner />,
         cName: 'sub-nav'
       },
@@ -46,14 +46,14 @@ export const SidebarData = [
       },
       {
         title: 'Cancelar Agendamento',
-        path: '/schedule/cancelSchedule',
+        path: '/cancelSchedule',
         icon: <FcIcons.FcLeave />
       }
     ]
   },
   {
     title: 'Cadastro',
-    path: '/register',
+    path: '/app',
     icon: <FcIcons.FcAddDatabase />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
@@ -61,27 +61,27 @@ export const SidebarData = [
     subNav: [
       {
         title: 'Pet´s',
-        path: '/register/pet',
+        path: '/pet',
         icon: <FcIcons.FcLinux />
       },
       {
         title: 'Serviços',
-        path: '/register/services',
+        path: '/petservices',
         icon: <FcIcons.FcServices />
       },
       {
         title: 'Usuarios',
-        path: '/register/users',
+        path: '/users',
         icon: <FcIcons.FcConferenceCall />
       },
       {
         title: 'Produtos',
-        path: '/register/product',
+        path: '/product',
         icon: <FcIcons.FcShipped />
       },
       {
         title: 'Profissionais',
-        path: '/register/professional',
+        path: '/professional',
         icon: <FcIcons.FcManager />
       }
     ]
