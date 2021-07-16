@@ -3,7 +3,7 @@ import { getToken } from './auth';
 
 const api = axios.create({
   // baseURL: 'http://localhost:3333'
-  baseURL: 'http://localhost:8080',
+  baseURL: 'http://ec2-52-67-56-10.sa-east-1.compute.amazonaws.com:8080',
   headers: {
     'Content-Type': 'application/json',
     'Access-Control-Allow-Origin': '*',
